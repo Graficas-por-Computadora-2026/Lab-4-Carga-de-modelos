@@ -20,5 +20,12 @@ fn main() {
         draw.clear_background(Color::BLACK);
         line::point(&mut draw, punto, Color::WHITE);
         line::line(&mut draw, Vector2::new(80.0, 80.0), Vector2::new(560.0, 400.0), Color::GREEN);
+        line::triangle(
+            &mut draw,
+            Vector2::new(320.0, 100.0),
+            Vector2::new(150.0, 350.0),
+            Vector2::new(500.0, 350.0),
+            Color::YELLOW,
+        );
     }
 }

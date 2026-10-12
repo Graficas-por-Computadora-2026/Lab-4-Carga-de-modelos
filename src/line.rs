@@ -25,3 +25,10 @@ pub fn line(draw: &mut impl RaylibDraw, start: Vector2, end: Vector2, color: Col
         if twice_error <= dx { error += dx; y += sy; }
     }
 }
+
+/// Dibuja el contorno de un triángulo conectando sus tres vértices.
+pub fn triangle(draw: &mut impl RaylibDraw, a: Vector2, b: Vector2, c: Vector2, color: Color) {
+    line(draw, a, b, color);
+    line(draw, b, c, color);
+    line(draw, c, a, color);
+}
