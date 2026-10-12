@@ -10,5 +10,6 @@ fn main() {
     let punto = Vector2::new(100.0, 200.0);
     let vertice = Vector3::new(3.0, 5.0, -2.0);
 
+    println!("Vector2: x = {}, y = {}", punto.x, punto.y);
     imprimir_vertice(vertice);
 }
